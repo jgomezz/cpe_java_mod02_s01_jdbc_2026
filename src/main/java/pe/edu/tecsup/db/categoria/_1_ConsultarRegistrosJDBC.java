@@ -2,7 +2,7 @@ package pe.edu.tecsup.db.categoria;
 
 import java.sql.*;
 
-public class ConsultarRegistrosJDBC {
+public class _1_ConsultarRegistrosJDBC {
 
     public static void main(String[] args) {
 
