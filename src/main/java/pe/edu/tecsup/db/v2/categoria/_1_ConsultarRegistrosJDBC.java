@@ -1,22 +1,20 @@
-package pe.edu.tecsup.db.categoria;
+package pe.edu.tecsup.db.v2.categoria;
 
-import java.sql.*;
+import pe.edu.tecsup.db.v2.util.DBConnection;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class _1_ConsultarRegistrosJDBC {
 
     public static void main(String[] args) {
 
-        final String URL = "jdbc:mariadb://localhost/almacen2";
-        final String USER = "root";
-        final String PASSWORD = "root";
-
-
         try {
-            // Cargar el driver
-            Class.forName("org.mariadb.jdbc.Driver");
 
             // Conectarme a la Base de datos
-            Connection con = DriverManager.getConnection(URL,USER,PASSWORD);
+            Connection con = DBConnection.getConnection();
 
             // Preparar la sentencia
             String sql=

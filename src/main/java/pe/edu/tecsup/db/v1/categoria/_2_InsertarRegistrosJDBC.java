@@ -1,4 +1,4 @@
-package pe.edu.tecsup.db.categoria;
+package pe.edu.tecsup.db.v1.categoria;
 
 import java.sql.*;
 

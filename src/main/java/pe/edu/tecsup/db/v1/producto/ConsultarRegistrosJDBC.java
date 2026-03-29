@@ -1,4 +1,4 @@
-package pe.edu.tecsup.db.producto;
+package pe.edu.tecsup.db.v1.producto;
 
 /**
  *  Consultar a a la tabla productos y mostrar la informacion
