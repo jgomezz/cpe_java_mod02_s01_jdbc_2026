@@ -32,14 +32,14 @@ public class _3_ActualizarRegistrosJDBC {
                     """;
             PreparedStatement stmt= con.prepareStatement(sql);
 
-            int id = 5;  // Set del ID a modificar
+            int id = 5;  // Set del ID del registro a modificar
 
-            // Preparar los datos a Ingresar
+            // Preparar los datos a actualizar por ID
             stmt.setString(1, "Dispositivo Móvil"); // nombre
             stmt.setString(2, "Descripción de Dispositivo Movil"); // descripcion
             stmt.setInt(3, id); // id del registro a modificar
 
-            // Ejecutar la insercion
+            // Ejecutar la actualizacion
             int estado = stmt.executeUpdate();
             if (estado != 1)
                 throw new SQLException("No se pudo actualizar");
