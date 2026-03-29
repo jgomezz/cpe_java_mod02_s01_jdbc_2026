@@ -52,6 +52,7 @@ public class _2_InsertarRegistrosJDBC {
 
             System.out.printf("Se inserto el registro de categoria con ID = %d \n", id);
 
+            rs.close();
             stmt.close();
             con.close();
             
